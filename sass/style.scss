@@ -1,50 +1,88 @@
-$text-center:center;
-$col-h1:rgba(27, 176, 235, 0.8);
-$bg-color:rgb(75, 129, 77);
+$text-center: center;
+$col-h1: rgba(27, 176, 235, 0.8);
+$bg-color: rgb(75, 129, 77);
 $m-auto: 0px auto;
-$bg-color-l:rgba(27, 176, 235, 0.3);
-$all-shadow:5px 5px 5px 5px rgba(27, 176, 235, 0.3);
-$br-runded:3px;
+$bg-color-l: rgba(27, 176, 235, 0.3);
+$all-shadow: 5px 5px 5px 5px rgba(27, 176, 235, 0.3);
+$br-runded: 3px;
+$button-col: rgb(0, 128, 0);
+$button-col2: rgb(255, 0, 0);
 
-
-
-
-main{
-    width: 75%;
-    margin:$m-auto ;
+main {
+  width: 75%;
+  margin: $m-auto;
 }
 
-.l1{
-width: 95%;
-margin: $m-auto;
-background-color: $bg-color-l;
-padding: 10px;
-box-shadow: $all-shadow;
-border-radius: $br-runded;
-margin-bottom: 60px;
+.l1 {
+  width: 95%;
+  margin: $m-auto;
+  background-color: $bg-color-l;
+  padding: 10px;
+  box-shadow: $all-shadow;
+  border-radius: $br-runded;
+  margin-bottom: 60px;
 }
 
-h1{
-
-text-align: $text-center;
-color: $col-h1;
-background-color: $bg-color;
-
+h1 {
+  text-align: $text-center;
+  color: $col-h1;
+  background-color: $bg-color;
 }
 
-.img{
-display: flex;
-justify-content: center;
-
-
-
-
+.img {
+  display: flex;
+  justify-content: center;
 }
 
-
-img{
-    width: 50%;
-    margin: 15px;
-    border-radius: $br-runded;
-    box-shadow: 5px 5px 5px rgb(44, 42, 42);
+img {
+  width: 50%;
+  margin: 15px;
+  border-radius: $br-runded;
+  box-shadow: 5px 5px 5px rgb(44, 42, 42);
+}
+.endp {
+  width: 95%;
+  margin: $m-auto;
+  background-color: $bg-color-l;
+  padding: 10px;
+  box-shadow: $all-shadow;
+  border-radius: $br-runded;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+button {
+  padding: 5px;
+  padding-left: 17px;
+  padding-right: 17px;
+  cursor: pointer;
+  background-color: $bg-color;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 30px;
+}
+.button1 {
+  background-color: $button-col2;
+}
+button:hover {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: aliceblue;
+  color: $button-col;
+  border: 1px solid $button-col;
+}
+.button1:hover {
+  background-color: aliceblue;
+  color: $button-col2;
+  border: 1px solid $button-col2;
 }
